@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_05" >
+    
+    <ImageButton
+            android:id="@+id/ibt_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ibt_back"
+            android:layout_alignLeft="@+id/ibt_bus"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxHeight="100dip"
+            android:maxWidth="100dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_train" />
+
+        <ImageButton
+            android:id="@+id/ibt_mrt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ibt_taxi"
+            android:layout_alignLeft="@+id/ibt_bus"
+            android:layout_marginBottom="56dp"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxHeight="100dip"
+            android:maxWidth="100dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_mrt" />
+
+        <ImageButton
+            android:id="@+id/ibt_bus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ibt_taxi"
+            android:layout_marginLeft="33dp"
+            android:layout_toRightOf="@+id/ibt_taxi"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxHeight="100dip"
+            android:maxWidth="100dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_bus" />
+
+        <ImageButton
+            android:id="@+id/ibt_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ibt_mrt"
+            android:layout_alignTop="@+id/ibt_mrt"
+            android:layout_toLeftOf="@+id/ibt_bus"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxHeight="100dip"
+            android:maxWidth="100dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_map" />
+
+        <ImageButton
+            android:id="@+id/ibt_taxi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ibt_back"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxHeight="100dip"
+            android:maxWidth="100dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_taxi" />
+
+        <ImageButton
+            android:id="@+id/ibt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginLeft="44dp"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxHeight="100dip"
+            android:maxWidth="100dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/ibt_taxi"
+            android:textSize="20sp"
+            android:text="計程車" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/textView2"
+            android:textSize="20sp"
+            android:text="公車" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_below="@+id/ibt_train"
+            android:textSize="20sp"
+            android:text="火車" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignLeft="@+id/textView3"
+            android:textSize="20sp"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignRight="@+id/ibt_map"
+            android:layout_marginRight="32dp"
+            android:textSize="20sp"
+            android:text="地圖" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ibt_mrt"
+            android:layout_below="@+id/ibt_map"
+            android:layout_marginLeft="34dp"
+            android:textSize="20sp"
+            android:text="捷運" />
+
+</RelativeLayout>

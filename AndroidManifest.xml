@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tku.wiseway"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+    <supports-screens 
+        android:smallScreens="true" 
+        android:resizeable="true" 
+        android:normalScreens="true" 
+        android:largeScreens="true" 
+        android:anyDensity="true" 
+        android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.tku.wiseway.Home"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ABOUT" android:screenOrientation="portrait"></activity>
+        <activity android:name="BUS" android:screenOrientation="portrait"></activity>
+        <activity android:name="MAP" android:screenOrientation="portrait"></activity>
+        <activity android:name="MRT" android:screenOrientation="portrait"></activity>
+        <activity android:name="TAXI" android:screenOrientation="portrait"></activity>
+        <activity android:name="TRAFFIC" android:screenOrientation="portrait"></activity>
+        <activity android:name="TRAIN" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
